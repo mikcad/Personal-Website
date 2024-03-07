@@ -18,6 +18,10 @@
    line-height: calc(.5rem + 1em);
  }
 
+ html {
+  scroll-behavior: smooth;
+}
+
  /* 
   Container to keep the content off the side of the screen
  */
