@@ -1,6 +1,11 @@
-
 const About = () => {
-  return <div>About</div>;
+  return (
+    <main className="h-100%">
+      <section >
+         <div className="d-flex align-bottom">About</div>
+      </section>
+    </main>
+  );
 };
 
 export default About;

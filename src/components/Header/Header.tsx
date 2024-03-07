@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
@@ -10,10 +10,10 @@ import './header.css';
 const Header = () => {
   return (
     <>
-      <Navbar expand="lg" className="border-bottom p-4 justify-content-center">
+      <Navbar expand="lg" className="p-4 mb-5 border-bottom  justify-content-center">
         <Container className="m-0">
-          <Navbar.Brand className="px-4">
-            <NavLink to={'/'}>
+          <Navbar.Brand className="px-3">
+            <Link to={'/'}>
               <img
                 src={logo}
                 alt="Mike Logo"
@@ -21,18 +21,13 @@ const Header = () => {
                 height={40}
                 width={100}
               />
-            </NavLink>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto column-gap-2 text-center">
               <Nav.Link>
-                <NavLink
-                  to={'/'}
-                  className={({ isActive }) => (isActive ? 'active' : '')}
-                >
-                  Home
-                </NavLink>
+                <NavLink to={'/'}>Home</NavLink>
               </Nav.Link>
               <Nav.Link>
                 <NavLink to={'/about'}>About</NavLink>

@@ -17,6 +17,18 @@
    text-rendering: optimizeSpeed;
    line-height: calc(.5rem + 1em);
  }
+
+ /* 
+  Container to keep the content off the side of the screen
+ */
+ main {
+  width: min(80ch, 100% - 4rem);
+  margin-inline: auto;
+ }
+
+ section {
+  height: 95vh;
+ }
  
  /*
    Improve media defaults

@@ -3,8 +3,13 @@
    font-size: 1.1rem;
  }
 
+ a {
+   text-decoration: none;
+   color: #3baeff;
+ }
+
 .navbar-toggler-icon {
-   background-image: url('/public/menu-icon_48x48.svg')!important;
+   background-image: url('/public/menu-icon_48x48.svg');
 }
 
 .navbar-brand {
@@ -12,5 +17,7 @@
 }
 
 .active {
-   color: blueviolet;
-}
+   color: orange;
+   padding-bottom: 5px;
+   border-bottom: solid 3px orange;
+ }
