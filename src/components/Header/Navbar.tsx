@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <Navbar
         expand="lg"
-        className="p-4 mb-5 border-bottom  justify-content-center"
+        className="p-4 mb-5 border-bottom justify-content-center"
       >
         <Container className="m-0">
           <Navbar.Brand className="px-3">

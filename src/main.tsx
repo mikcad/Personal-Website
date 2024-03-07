@@ -10,7 +10,7 @@ import NotFound from './pages/ErrorPages/NotFound.tsx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './global.css';
-import Header from './components/Header/Header.tsx';
+import Header from './components/Header/Navbar.tsx';
 
 const router = createBrowserRouter([
   {

@@ -5,13 +5,29 @@
 
  a {
    text-decoration: none;
-   color: #3baeff;
  }
 
-.nav-link a:hover {
-   padding-bottom: 5px;
-   border-bottom: solid 3px orange;
-}
+ .nav-link {
+   position: relative;
+ }
+ 
+ .nav-link:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 3px;
+   bottom: 0;
+   left: 0;
+   background-color: orange;
+   transform-origin: bottom right;
+   transition: transform 0.3s ease-out;
+ }
+ 
+ .nav-link:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+ }
 
 .navbar-toggler-icon {
    background-image: url('/public/menu-icon_48x48.svg');
@@ -22,10 +38,7 @@
 }
 
 .active {
-   translate: color, border-bottom;
    color: orange!important;
-   padding-bottom: 5px;
-   border-bottom: solid 3px orange;
  }
 
 

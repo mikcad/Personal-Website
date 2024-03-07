@@ -1,8 +1,13 @@
 const About = () => {
   return (
-    <main className="h-100%">
+    <main id="about-content" className="container">
+      <header>
+         hello
+      </header>
+      <article>
+         about me :)
+      </article>
       <section >
-         <div className="d-flex align-bottom">About</div>
       </section>
     </main>
   );
