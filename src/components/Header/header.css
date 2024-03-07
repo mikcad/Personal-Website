@@ -1,4 +1,12 @@
 .nav-link {
-   color: #3baeff;
+   color: #3baeff!important;
    font-size: 1.1rem;
  }
+
+.navbar-toggler-icon {
+   background-image: url('/public/menu-icon_48x48.svg')!important;
+}
+
+.navbar-brand {
+   border-bottom: solid 5px #3baeff;
+}
