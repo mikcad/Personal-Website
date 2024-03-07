@@ -8,6 +8,11 @@
    color: #3baeff;
  }
 
+.nav-link a:hover {
+   padding-bottom: 5px;
+   border-bottom: solid 3px orange;
+}
+
 .navbar-toggler-icon {
    background-image: url('/public/menu-icon_48x48.svg');
 }
@@ -17,7 +22,10 @@
 }
 
 .active {
-   color: orange;
+   translate: color, border-bottom;
+   color: orange!important;
    padding-bottom: 5px;
    border-bottom: solid 3px orange;
  }
+
+

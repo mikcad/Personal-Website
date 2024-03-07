@@ -10,7 +10,10 @@ import './header.css';
 const Header = () => {
   return (
     <>
-      <Navbar expand="lg" className="p-4 mb-5 border-bottom  justify-content-center">
+      <Navbar
+        expand="lg"
+        className="p-4 mb-5 border-bottom  justify-content-center"
+      >
         <Container className="m-0">
           <Navbar.Brand className="px-3">
             <Link to={'/'}>
@@ -26,18 +29,18 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto column-gap-2 text-center">
-              <Nav.Link>
-                <NavLink to={'/'}>Home</NavLink>
-              </Nav.Link>
-              <Nav.Link>
-                <NavLink to={'/about'}>About</NavLink>
-              </Nav.Link>
-              <Nav.Link>
-                <NavLink to={'/projects'}>Projects</NavLink>
-              </Nav.Link>
-              <Nav.Link>
-                <NavLink to={'/contact'}>Contact</NavLink>
-              </Nav.Link>
+              <NavLink to={'/'} className={'nav-link'}>
+                Home
+              </NavLink>
+              <NavLink to={'/about'} className={'nav-link'}>
+                About
+              </NavLink>
+              <NavLink to={'/projects'} className={'nav-link'}>
+                Projects
+              </NavLink>
+              <NavLink to={'/contact'} className={'nav-link'}>
+                Cotact
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
