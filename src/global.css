@@ -55,22 +55,15 @@
  
    /** COLOURS */
    --background-color: #0f1216;
-   --text-color: #0094ff;
+   --text-color: #3baeff;
+   --white: #fff;
+
  }
  
  body {
-   /* background: var(--background-color); */
+   font-family: "Anta", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   background: var(--background-color);
    color: var(--text-color);
  }
-
- .header {
-   background-color: #6e7dab;
- }
-
- .header h2 {
-   font-size: 4rem;
- }
- 
-
- 
- 
