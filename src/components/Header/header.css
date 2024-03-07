@@ -10,3 +10,7 @@
 .navbar-brand {
    border-bottom: solid 5px #3baeff;
 }
+
+.active {
+   color: blueviolet;
+}

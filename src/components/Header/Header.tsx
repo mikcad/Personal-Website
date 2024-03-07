@@ -8,25 +8,31 @@ import logo from '/logo-img/mike-logo_487x105_no-bg.svg';
 import './header.css';
 
 const Header = () => {
-  
   return (
     <>
       <Navbar expand="lg" className="border-bottom p-4 justify-content-center">
         <Container className="m-0">
-          <Navbar.Brand href="/" className="px-4">
-            <img
-              src={logo}
-              alt="Mike Logo"
-              className="mike-logo"
-              height={40}
-              width={100}
-            />
+          <Navbar.Brand className="px-4">
+            <NavLink to={'/'}>
+              <img
+                src={logo}
+                alt="Mike Logo"
+                className="mike-logo"
+                height={40}
+                width={100}
+              />
+            </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto column-gap-2 text-center">
               <Nav.Link>
-                <NavLink to={'/'}>Home</NavLink>
+                <NavLink
+                  to={'/'}
+                  className={({ isActive }) => (isActive ? 'active' : '')}
+                >
+                  Home
+                </NavLink>
               </Nav.Link>
               <Nav.Link>
                 <NavLink to={'/about'}>About</NavLink>
