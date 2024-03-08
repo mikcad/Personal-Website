@@ -5,16 +5,16 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 import logo from '/logo-img/mike-logo_487x105_no-bg.svg';
 
-import './header.css';
+import './navbar.css';
 
 const Header = () => {
   return (
     <>
       <Navbar
         expand="lg"
-        className="p-4 mb-5 border-bottom justify-content-center"
+        className="p-4 mb-5 border-bottom justify-content-center sticky-top"
       >
-        <Container className="m-0">
+        <Container>
           <Navbar.Brand className="px-3">
             <Link to={'/'}>
               <img
