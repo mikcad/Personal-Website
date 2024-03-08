@@ -41,4 +41,15 @@
    color: orange!important;
  }
 
-
+ /* @media (max-width: 991px) {
+  .show {
+    position: absolute;
+    top: 107px;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background: var(--background-color);
+    border-bottom: solid 1px white;
+    padding: 12px 0;
+  }
+} */
