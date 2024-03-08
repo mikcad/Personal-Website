@@ -1,0 +1,44 @@
+#home-header {
+   padding: 30vh 0 100px;
+
+}
+
+.hero-header {
+   max-width: 47rem;
+   margin-bottom: 30px;
+   margin-right: 10%;
+}
+
+.hero-text {
+   font-size: 1.15rem;
+   max-width: 30rem;
+   color: #add8e6;
+}
+
+.container-icons{
+   text-align: center;
+   margin-bottom: 3rem;
+   flex-direction: row;
+   flex-wrap: wrap;   
+}
+
+.box-icon {
+   color: white;
+   height: 142px;
+   width: 50%;
+}
+
+.dev-icon {
+   font-size: 4.5rem;
+   margin-bottom: 10px;
+}
+
+.container-icons p {
+   color: #add8e6;
+}
+
+@media (min-width: 1024px){
+   .container-icons .box-icon {
+      width: 12.5%;
+}
+}
