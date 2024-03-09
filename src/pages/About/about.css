@@ -1,10 +1,30 @@
 #about-content {
-   margin-top: 200px;
-
+  height: 80vh;
 }
 
-
 .img-container {
-   min-width: 300px;
-   margin-right: 50px ;
+  min-width: 300px;
+}
+
+.sub-title {
+  color: orange!important;
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.general-text {
+   color: #add8e6!important;
+}
+
+.content-container {
+   gap: 50px;
+}
+
+@media (max-width: 700px) {
+   .content-container {
+      flex-wrap: wrap;
+   }
 }

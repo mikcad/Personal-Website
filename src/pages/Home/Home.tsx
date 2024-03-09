@@ -20,7 +20,7 @@ const Home = () => {
       <main>
         <section id="skills-tools" className="skills-tools">
           <div className="wrapper">
-            <h2>skills & tools</h2>
+            <h2 className='sub-title'>skills & tools</h2>
             <h1>My Toolbox & Things I Can Do</h1>
             <p>
               These are the set of skills and technologies that I can use to
