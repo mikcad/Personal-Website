@@ -4,7 +4,7 @@ import logo from '/logo-img/mike-logo_487x105_no-bg.svg';
 const Footer = () => {
   return (
     <footer id="footer">
-      <div className="footer-wrapper d-flex justify-content-between align-items-center py-5 flex-wrap">
+      <div className="footer-wrapper d-flex gap-2 justify-content-md-between justify-content-center align-items-center py-5 flex-wrap">
         <div className="d-flex column-gap-3 align-items-center">
           <img
             src={logo}
@@ -36,7 +36,7 @@ const Footer = () => {
           </a>
         </div>
         <div>
-          <p>© 2024 Michael Moczydlowski-Adeyemo</p>
+          <p className="m-0 text-center">© 2024 Michael Moczydlowski-Adeyemo</p>
         </div>
       </div>
     </footer>
