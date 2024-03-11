@@ -1,44 +1,56 @@
 #home-header {
-   padding: 30vh 0 100px;
+  padding: 30vh 0 100px;
+}
 
+#main-section {
+  padding: 30vh 0 100px;
 }
 
 .hero-header {
-   max-width: 47rem;
-   margin-bottom: 30px;
-   margin-right: 10%;
+  max-width: 47rem;
+  margin-bottom: 30px;
+  margin-right: 10%;
+  font-weight: bold;
+  /* letter-spacing: -0.05rem; */
 }
 
 .hero-text {
-   font-size: 1.15rem;
-   max-width: 30rem;
-   color: #add8e6;
+  font-size: 1.15rem;
+  max-width: 30rem;
+  color: #add8e6;
 }
 
-.container-icons{
-   text-align: center;
-   margin-bottom: 3rem;
-   flex-direction: row;
-   flex-wrap: wrap;   
+.container-icons {
+  text-align: center;
+  margin-bottom: 3rem;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .box-icon {
-   color: white;
-   height: 142px;
-   width: 50%;
+  color: #ffffff63;
+  height: 142px;
+  width: 40%;
+  min-width: 132px;
 }
 
 .dev-icon {
-   font-size: 4.5rem;
-   margin-bottom: 10px;
+  font-size: 4.5rem;
 }
 
 .container-icons p {
-   color: #add8e6;
+  color: #add8e6;
+  font-weight: 600;
 }
 
-@media (min-width: 1024px){
-   .container-icons .box-icon {
-      width: 12.5%;
+@media (min-width: 600px) {
+  .container-icons .box-icon {
+    width: 20%;
+  }
 }
+
+@media (min-width: 1024px) {
+  .container-icons .box-icon {
+    width: 12.5%;
+  }
 }

@@ -1,0 +1,20 @@
+#footer {
+  background: #0f1216;
+  box-shadow: 0 0 32px 0 #add8e636;
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 3px;
+  border-top: solid #add8e6 1px;
+}
+
+.footer-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 8%;
+}
+
+.footer-icon {
+  font-size: 2rem;
+  color: #add8e6;
+}
