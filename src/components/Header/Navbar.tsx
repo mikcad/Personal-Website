@@ -11,36 +11,59 @@ const Header = () => {
   return (
     <>
       <Navbar
+        collapseOnSelect
         expand="lg"
-        className="p-4 mb-5 border-bottom justify-content-center sticky-top"
+        className="p-4 mb-5 justify-content-center sticky-top"
       >
         <Container>
-          <Navbar.Brand className="px-3">
-            <Link to={'/'}>
-              <img
-                src={logo}
-                alt="Mike Logo"
-                className="mike-logo"
-                height={40}
-                width={100}
-              />
-            </Link>
+          <Navbar.Brand href="#home" className="px-3">
+            <Nav.Link href="#home">
+              <Link to={'/'}>
+                <img
+                  src={logo}
+                  alt="Mike Logo"
+                  className="mike-logo"
+                  height={40}
+                  width={100}
+                />
+              </Link>
+            </Nav.Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+          />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto column-gap-2 text-center">
-              <NavLink to={'/'} className={'nav-link'}>
-                Home
-              </NavLink>
-              <NavLink to={'/about'} className={'nav-link'}>
-                About
-              </NavLink>
-              <NavLink to={'/projects'} className={'nav-link'}>
-                Projects
-              </NavLink>
-              <NavLink to={'/contact'} className={'nav-link'}>
-                Cotact
-              </NavLink>
+              <Nav.Link href="#home">
+                <NavLink to={'/'} className={'nav-link-underline nav-link'}>
+                  Home
+                </NavLink>
+              </Nav.Link>
+              <Nav.Link href="#about">
+                <NavLink
+                  to={'/about'}
+                  className={'nav-link-underline nav-link'}
+                >
+                  About
+                </NavLink>
+              </Nav.Link>
+              <Nav.Link href="#projects">
+                <NavLink
+                  to={'/projects'}
+                  className={'nav-link-underline nav-link'}
+                >
+                  Projects
+                </NavLink>
+              </Nav.Link>
+              {/* TODO add a button/border for the contact link */}
+              <Nav.Link href="#contact">
+                <NavLink
+                  to={'/contact'}
+                  className={'nav-link-underline nav-link'}
+                >
+                  Get in Touch!
+                </NavLink>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
