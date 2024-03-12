@@ -13,27 +13,18 @@ const Footer = () => {
             height={40}
             width={100}
           />
-          <a
+          <SocialIcon
             href="https://www.linkedin.com/in/michaelmoczydlowski1337"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-linkedin footer-icon"></i>
-          </a>
-          <a
+            iconClass="fa-brands fa-linkedin footer-icon"
+          />
+          <SocialIcon
             href="https://github.com/mikcad"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-github footer-icon"></i>
-          </a>
-          <a
+            iconClass="fa-brands fa-github footer-icon"
+          />
+          <SocialIcon
             href="mailto:mikedlowski@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-regular fa-envelope footer-icon"></i>
-          </a>
+            iconClass="fa-regular fa-envelope footer-icon"
+          />
         </div>
         <div>
           <p className="m-0 text-center">© 2024 Michael Moczydlowski-Adeyemo</p>
@@ -43,15 +34,17 @@ const Footer = () => {
   );
 };
 
-interface socialIcon {
+interface SocialIconProps {
   href: string;
   iconClass: string;
 }
 
-const SocialIcon = ({ href, iconClass }: socialIcon) => {
-  <a href={href} target="_blank" rel="noopener noreferrer">
-    <i className={iconClass}></i>
-  </a>;
+const SocialIcon = ({ href, iconClass }: SocialIconProps) => {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <i className={iconClass}></i>
+    </a>
+  );
 };
 
 export default Footer;
