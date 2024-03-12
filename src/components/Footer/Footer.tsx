@@ -43,4 +43,15 @@ const Footer = () => {
   );
 };
 
+interface socialIcon {
+  href: string;
+  iconClass: string;
+}
+
+const SocialIcon = ({ href, iconClass }: socialIcon) => {
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    <i className={iconClass}></i>
+  </a>;
+};
+
 export default Footer;
