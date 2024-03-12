@@ -77,11 +77,7 @@ interface SkillCardsProps {
   skillName: string;
 }
 
-const SkillCards: React.FC<SkillCardsProps> = ({
-  className,
-  imgSrc,
-  skillName,
-}) => {
+const SkillCards = ({ className, imgSrc, skillName }: SkillCardsProps) => {
   return (
     <div className={'box-icon'}>
       <i className={`dev-icon ${imgSrc}`}></i>
