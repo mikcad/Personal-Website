@@ -20,6 +20,12 @@ body {
   line-height: calc(0.5rem + 1em);
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   scroll-behavior: smooth;
 }
