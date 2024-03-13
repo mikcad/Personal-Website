@@ -15,15 +15,15 @@ const Footer = () => {
           />
           <SocialIcon
             href="https://www.linkedin.com/in/michaelmoczydlowski1337"
-            iconClass="fa-brands fa-linkedin footer-icon"
+            iconClass="fa-brands fa-linkedin"
           />
           <SocialIcon
             href="https://github.com/mikcad"
-            iconClass="fa-brands fa-github footer-icon"
+            iconClass="fa-brands fa-github"
           />
           <SocialIcon
             href="mailto:mikedlowski@gmail.com"
-            iconClass="fa-regular fa-envelope footer-icon"
+            iconClass="fa-regular fa-envelope"
           />
         </div>
         <div>
@@ -42,7 +42,7 @@ interface SocialIconProps {
 const SocialIcon = ({ href, iconClass }: SocialIconProps) => {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
-      <i className={iconClass}></i>
+      <i className={`footer-icon ${iconClass}`}></i>
     </a>
   );
 };
