@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { ChangeEvent, useRef, useState } from 'react';
 import './contact.css';
 import emailjs from '@emailjs/browser';
 
@@ -12,7 +12,7 @@ const Contact = () => {
     user_message: '',
   });
 
-  const handleInputChange = (e: any) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -46,9 +46,11 @@ const Contact = () => {
   return (
     <section id="contact-section">
       <div className="wrapper">
-        <h2>Contact</h2>
-        <h1>Get in Touch</h1>
-        <div className="content-container d-flex">
+        <div className="">
+          <h2 className="sub-title">Contact</h2>
+          <h1>Get in Touch</h1>
+        </div>
+        <div className="content-container">
           <div className="form-container">
             <p>
               Drop me a message to have a chat, ask about my resume or see if we
@@ -104,7 +106,7 @@ const Contact = () => {
               <input id="send" type="submit" value="Send Email" />
             </form>
           </div>
-          <div className="social-container">here are my socials</div>
+          {/* <div className="social-container">here are my socials</div> */}
         </div>
       </div>
     </section>
