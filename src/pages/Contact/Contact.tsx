@@ -3,7 +3,7 @@ import './contact.css';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [formState, setFormState] = useState(false);
+  // const [formState, setFormState] = useState(false);
   const form: any = useRef();
 
   const [formData, setFormData] = useState({
@@ -30,7 +30,7 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS! Email has been sent!');
-          setFormState(true);
+          // setFormState(true);
           setFormData({
             user_name: '',
             user_email: '',

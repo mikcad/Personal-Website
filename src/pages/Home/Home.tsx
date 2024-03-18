@@ -77,7 +77,7 @@ interface SkillCardsProps {
   skillName: string;
 }
 
-const SkillCards = ({ className, imgSrc, skillName }: SkillCardsProps) => {
+const SkillCards = ({ imgSrc, skillName }: SkillCardsProps) => {
   return (
     <div className={'box-icon'}>
       <i className={`dev-icon ${imgSrc}`}></i>

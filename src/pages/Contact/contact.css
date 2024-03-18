@@ -1,0 +1,195 @@
+#contact-section {
+  padding: 5vh 0 100px;
+}
+
+/* @media (min-width: 800px) {
+  #contact-section .container-social {
+    width: 37%;
+    padding: 188px 0 0 35px;
+  }
+}
+
+@media (min-width: 991px) {
+  #contact-section .container-social {
+    padding: 157px 0 0 40px;
+  }
+}
+
+@media (min-width: 1006px) {
+  #contact-section .container-social {
+    padding: 126px 0 0 45px;
+  }
+}
+
+@media (min-width: 800px) {
+  #contact-section .container-form {
+    width: 62%;
+  }
+}
+
+@media (min-width: 800px) {
+  #contact-section .container-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+} */
+
+#contact-section form {
+  margin-bottom: 50px;
+}
+
+#contact-section form .field {
+  margin-bottom: -10px;
+}
+
+#contact-section form input {
+  background: rgba(174, 174, 180, 0.795);
+}
+
+#contact-section form label,
+#contact-section form input,
+#contact-section form textarea {
+  border: 2px solid #48d8a400;
+  width: 100%;
+  display: block;
+  padding: 1.2rem 0.6rem 0.4rem;
+}
+
+#contact-section form label::-webkit-input-placeholder,
+#contact-section form input::-webkit-input-placeholder,
+#contact-section form textarea::-webkit-input-placeholder {
+  color: #48d8a400;
+}
+
+#contact-section form label:-ms-input-placeholder,
+#contact-section form input:-ms-input-placeholder,
+#contact-section form textarea:-ms-input-placeholder {
+  color: #48d8a400;
+}
+
+#contact-section form label::-ms-input-placeholder,
+#contact-section form input::-ms-input-placeholder,
+#contact-section form textarea::-ms-input-placeholder {
+  color: #48d8a400;
+}
+
+#contact-section form label::placeholder,
+#contact-section form input::placeholder,
+#contact-section form textarea::placeholder {
+  color: #48d8a400;
+}
+
+#contact-section form label:required,
+#contact-section form input:required,
+#contact-section form textarea:required {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#contact-section form label:required:invalid,
+#contact-section form input:required:invalid,
+#contact-section form textarea:required:invalid {
+  -webkit-box-shadow: 2px 2px var(--text-color);
+  box-shadow: 2px 2px var(--text-color);
+}
+
+#contact-section form textarea {
+  resize: none;
+  height: 150px;
+}
+
+#contact-section form label {
+  pointer-events: none;
+  height: 26px;
+  color: white;
+  -webkit-transform: translateY(-67px);
+  transform: translateY(-67px);
+  -webkit-transition: color 0.2s ease, font-size 0.2s ease,
+    -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, font-size 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, font-size 0.2s ease;
+  transition: transform 0.2s ease,
+    color 0.2s cubic-bezier(0.25, 0.1, 0.24, 1.01), font-size 0.2s ease,
+    -webkit-transform 0.2s ease;
+}
+
+#contact-section form label.message {
+  -webkit-transform: translateY(-156px);
+  transform: translateY(-156px);
+}
+
+#contact-section form label .required {
+  color: #f0535d;
+}
+
+#contact-section form input:focus,
+#contact-section form textarea:focus {
+  /* border: 2px solid #48d8a4; */
+  border: 2px solid orange;
+}
+
+#contact-section form input:focus::-webkit-input-placeholder,
+#contact-section form textarea:focus::-webkit-input-placeholder {
+  color: #3f3f3f;
+}
+
+#contact-section form input:focus:-ms-input-placeholder,
+#contact-section form textarea:focus:-ms-input-placeholder {
+  color: #3f3f3f;
+}
+
+#contact-section form input:focus::-ms-input-placeholder,
+#contact-section form textarea:focus::-ms-input-placeholder {
+  color: #3f3f3f;
+}
+
+#contact-section form input:focus::placeholder,
+#contact-section form textarea:focus::placeholder {
+  color: #3f3f3f;
+}
+
+#contact-section form input:focus ~ label,
+#contact-section form input:valid ~ label,
+#contact-section form textarea:focus ~ label,
+#contact-section form textarea:valid ~ label {
+  font-size: 1rem;
+  color: orange;
+}
+
+#contact-section form input:focus ~ label,
+#contact-section form input:valid ~ label {
+  -webkit-transform: translateY(-80px);
+  transform: translateY(-80px);
+}
+
+#contact-section form textarea:focus ~ label,
+#contact-section form textarea:valid ~ label {
+  -webkit-transform: translateY(-168px);
+  transform: translateY(-168px);
+}
+
+#contact-section form input[type='submit'] {
+  width: 10rem;
+  height: 3rem;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .form-container form {
+    max-width: 30rem;
+  }
+}

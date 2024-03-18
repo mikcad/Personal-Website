@@ -1,13 +1,30 @@
 import { Outlet } from 'react-router';
+// import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 import logo from '/logo-img/mike-logo_487x105_no-bg.svg';
 
 import './navbar.css';
 
 const Header = () => {
+  // const [expanded, setExpanded] = useState(false);
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth >= 992) {
+  //       if (expanded) {
+  //         setExpanded(false);
+  //       }
+  //     }
+  //   };
+
+  //   return () => {};
+  // }, []);
+
   return (
     <>
       <Navbar
@@ -30,6 +47,7 @@ const Header = () => {
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle
+            // onClick={() => setExpanded(true)}
             aria-controls="responsive-navbar-nav"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
