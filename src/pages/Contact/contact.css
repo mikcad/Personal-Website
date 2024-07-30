@@ -55,7 +55,8 @@
   margin-bottom: -10px;
 }
 
-#contact-section form input {
+#contact-section form input,
+#contact-section form textarea {
   background: rgba(174, 174, 180, 0.795);
 }
 
@@ -112,6 +113,11 @@
   height: 150px;
 }
 
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
 #contact-section form label {
   pointer-events: none;
   height: 26px;
@@ -128,8 +134,8 @@
 }
 
 #contact-section form label.message {
-  -webkit-transform: translateY(-156px);
-  transform: translateY(-156px);
+  -webkit-transform: translateY(-163px);
+  transform: translateY(-163px);
 }
 
 #contact-section form label .required {

@@ -3,7 +3,7 @@ import './contact.css';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  // const [formState, setFormState] = useState(false);
+  const [formState, setFormState] = useState(false);
   const form: any = useRef();
 
   const [formData, setFormData] = useState({
@@ -12,7 +12,7 @@ const Contact = () => {
     user_message: '',
   });
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -90,21 +90,22 @@ const Contact = () => {
                 </label>
               </div>
               <div>
-                <input
+                <textarea
                   id="message"
-                  type="textbox"
                   name="user_message"
                   value={formData.user_message}
                   onChange={handleInputChange}
                   placeholder="Dear Michael, I seem to have lost my way! Can you help me??"
                   required
                 />
-                <label htmlFor="message">
+                <label className="message" htmlFor="message">
                   Message<span className="required">*</span>
                 </label>
               </div>
               <input id="send" type="submit" value="Send Email" />
             </form>
+            <div className='submit-confimation'>
+                         </div>
           </div>
           {/* <div className="social-container">here are my socials</div> */}
         </div>
